@@ -88,5 +88,3 @@ npm run dev
 
 Nếu bạn muốn Fork kho lưu trữ và chạy cục bộ, hãy làm theo hướng dẫn này: Fork và Clone kho lưu trữ Github
 
-✏️ Đóng Góp
-Đây là một kho lưu trữ mã nguồn mở và mọi đóng góp đều luôn được chào đón! Nếu bạn tìm thấy lỗi, vui lòng tạo một "issue" mới trong phần "Issues". Để đóng góp mã nguồn, hãy fork kho lưu trữ và gửi một "pull request". Sự đóng góp của bạn sẽ giúp dự án này trở thành tài nguyên quý giá cho cộng đồng!
