@@ -56,7 +56,7 @@ Bash
 Bạn cần nhập các lệnh sau vào màn hình terminal (trong VS Code) để có thể chạy dự án này tại máy cục bộ.
 
 Bash
-git clone https://github.com/chetannada/MERN-Todo.git
+git clone https://github.com/HuyGiaTran/Basic_ToDoList-with-MERN.git
 Di chuyển vào thư mục dự án:
 
 Bash
