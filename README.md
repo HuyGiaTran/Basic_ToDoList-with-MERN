@@ -30,27 +30,26 @@ MongoDB: Cơ sở dữ liệu NoSQL để lưu trữ các ghi chú công việc.
 🌱 Cấu Trúc Dự Án
 Kho lưu trữ được tổ chức thành hai thư mục chính để tách biệt phần frontend và backend.
 
-Bash
 /MERN-Todo
 
-├── client/                      # Ứng dụng Frontend React
+├── client/                      # Frontend React application
 │   ├── public/
-│   ├── src/                     # Mã nguồn
+│   ├── src/                     # Source code
 │   │   └── App.jsx
-│   ├── .env                     # Biến môi trường
-│   ├── index.css                # Styles hệ thống
-│   ├── index.html               # File HTML chính
-│   └── index.jsx                # File khởi tạo React
+│   ├── .env                     # Environment variables
+│   ├── index.css                # Global styles
+│   ├── index.html               # HTML entry point
+│   └── index.jsx                # React entry point
 │
-└── server/                      # Ứng dụng Backend Node.js và Express.js
-│   ├── controllers/             # Logic xử lý yêu cầu (request)
-│   ├── models/                  # Cấu trúc dữ liệu Mongoose (Schemas)
+└── server/                      # Backend Node.js and Express.js application
+│   ├── controllers/             # Request handling logic
+│   ├── models/                  # Mongoose schemas
 │   ├── node_modules/
-│   ├── routes/                  # Định nghĩa các đường dẫn API (Routes)
-│   ├── .env                     # Biến môi trường
-│   └── index.js                 # File khởi tạo Server
+│   ├── routes/                  # API route definitions
+│   ├── .env                     # Environment variables
+│   └── index.js                 # Server entry point
 │
-└── README.md                    # Tài liệu hướng dẫn dự án
+└── README.md                    # Project documentation
 
 🔥 Sao Chép Kho Lưu Trữ (Clone)
 Bạn cần nhập các lệnh sau vào màn hình terminal (trong VS Code) để có thể chạy dự án này tại máy cục bộ.
