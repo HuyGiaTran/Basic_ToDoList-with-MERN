@@ -1,117 +1,92 @@
-# ❤️ MERN Stack Todo App 📋
+❤️ Ứng dụng Todo MERN Stack 📋
+Một ứng dụng danh sách công việc (todo) full-stack đơn giản nhưng mạnh mẽ được xây dựng bằng MERN stack. Tổ chức các nhiệm vụ của bạn một cách hiệu quả với giao diện người dùng sạch sẽ và có độ phản hồi cao.
 
-A simple yet powerful full-stack todo application built with the MERN stack. Organize your tasks efficiently with a clean and responsive user interface.
+🚀 Xem Demo Trực Tiếp 😍
 
-- [🚀 _Live Project Demo_ 😍](https://mern-todofy.netlify.app/)
+🚀 Về Dự Án
+Đây là một ứng dụng Todo full-stack cho phép người dùng tạo, đọc, cập nhật và xóa (CRUD) các tác vụ. Ứng dụng được xây dựng với MERN stack (MongoDB, Express.js, React.js, Node.js) nhằm cung cấp trải nghiệm người dùng mượt mà và nhanh chóng.
 
-## 🚀 About the Project
+🛠️ Công Nghệ Sử Dụng
+Client (Frontend):
 
-This is a full-stack Todo application that allows users to create, read, update, and delete (CRUD) tasks. It's built with the MERN stack (MongoDB, Express.js, React.js, Node.js) to provide a seamless and fast user experience.
+React.js: Thư viện JavaScript để xây dựng giao diện người dùng.
 
-## 🛠️ Tech Stack
+HTML, CSS: Dùng để cấu trúc và tạo kiểu cho ứng dụng.
 
-**Client (Frontend):**
+TailwindCSS: Một framework CSS ưu tiên tiện ích (utility-first) để phát triển giao diện nhanh chóng.
 
-- **React.js**: A JavaScript library for building the user interface.
-- **HTML, CSS**: For structuring and styling the application.
-- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+Server (Backend):
 
-**Server (Backend):**
+Node.js: Môi trường thực thi JavaScript.
 
-- **Node.js**: A JavaScript runtime environment.
-- **Express.js**: A web application framework for building the RESTful API.
-- **Mongoose**: An object data modeling (ODM) library for MongoDB.
+Express.js: Framework ứng dụng web để xây dựng RESTful API.
 
-**Database:**
+Mongoose: Thư viện mô hình hóa đối tượng dữ liệu (ODM) cho MongoDB.
 
-- **MongoDB**: A NoSQL database for storing todos.
+Cơ sở dữ liệu:
 
-## 🌱 Project Structure
+MongoDB: Cơ sở dữ liệu NoSQL để lưu trữ các ghi chú công việc.
 
-The repository is organized into two main folders to separate the frontend and backend concerns.
+🌱 Cấu Trúc Dự Án
+Kho lưu trữ được tổ chức thành hai thư mục chính để tách biệt phần frontend và backend.
 
-```bash
+Bash
 /MERN-Todo
 
-├── client/                      # Frontend React application
+├── client/                      # Ứng dụng Frontend React
 │   ├── public/
-│   ├── src/                     # Source code
+│   ├── src/                     # Mã nguồn
 │   │   └── App.jsx
-│   ├── .env                     # Environment variables
-│   ├── index.css                # Global styles
-│   ├── index.html               # HTML entry point
-│   └── index.jsx                # React entry point
+│   ├── .env                     # Biến môi trường
+│   ├── index.css                # Styles hệ thống
+│   ├── index.html               # File HTML chính
+│   └── index.jsx                # File khởi tạo React
 │
-└── server/                      # Backend Node.js and Express.js application
-│   ├── controllers/             # Request handling logic
-│   ├── models/                  # Mongoose schemas
+└── server/                      # Ứng dụng Backend Node.js và Express.js
+│   ├── controllers/             # Logic xử lý yêu cầu (request)
+│   ├── models/                  # Cấu trúc dữ liệu Mongoose (Schemas)
 │   ├── node_modules/
-│   ├── routes/                  # API route definitions
-│   ├── .env                     # Environment variables
-│   └── index.js                 # Server entry point
+│   ├── routes/                  # Định nghĩa các đường dẫn API (Routes)
+│   ├── .env                     # Biến môi trường
+│   └── index.js                 # File khởi tạo Server
 │
-└── README.md                    # Project documentation
-```
+└── README.md                    # Tài liệu hướng dẫn dự án
 
-## 🎻 Prerequisites
+🔥 Sao Chép Kho Lưu Trữ (Clone)
+Bạn cần nhập các lệnh sau vào màn hình terminal (trong VS Code) để có thể chạy dự án này tại máy cục bộ.
 
-Before getting started with the Practicing Projects, you should have a basic understanding of `MongoDB, Express.js, React.js, Node.js, HTML, CSS, TailwindCSS and JavaScript.`
-
-## 🔥 Clone this Repository
-
-You need to write the following commands on the terminal screen (in vscode) so that you can run this project locally.
-
-```bash
+Bash
 git clone https://github.com/chetannada/MERN-Todo.git
-```
+Di chuyển vào thư mục dự án:
 
-Go to the project directory
-
-```bash
+Bash
 cd MERN-Todo
-```
+Cài đặt các thư viện phụ thuộc cho cả client và server:
 
-Install dependencies for both client and server:
-
-```bash
-Install client dependencies
-
+# Cài đặt thư viện cho client
 cd client
 npm install
 
-Install server dependencies
-
+# Cài đặt thư viện cho server
 cd ../server
 npm install
-```
+Thiết lập biến môi trường:
 
-Set up environment variables:
+.env - Các biến môi trường để dự án chạy trong môi trường phát triển (điền các giá trị thực tế cho các biến môi trường của bạn).
 
-    * .env - environment variables for this project to run in development environment (fill with actual values for environment variables)
+Chạy ứng dụng:
 
-Run the application:
+Tại thư mục server, khởi động backend server:
 
-- In the **server** directory, start the backend server:
+Bash
+npm run start
+Tại thư mục client, khởi động ứng dụng frontend:
 
-  ```bash
-  npm run start
-  ```
+Bash
+npm run dev
+Ứng dụng client sẽ chạy tại địa chỉ http://localhost:3000 và server sẽ lắng nghe tại http://localhost:5000.
 
-- In the **client** directory, start the frontend app:
-  ```bash
-  npm run dev
-  ```
+Nếu bạn muốn Fork kho lưu trữ và chạy cục bộ, hãy làm theo hướng dẫn này: Fork và Clone kho lưu trữ Github
 
-The client application will now be running on `http://localhost:3000` and the server will be listening on `http://localhost:5000`.
-
-If you want to Fork repository and want to run locally, follow this guidelines [Fork and Clone Github Repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-
-## ✏️ Contributing
-
-This is an Open-Source repository, and contributions are always welcome! If you find an issue, please create a new issue under the "Issues" section. To contribute code, fork the repository and submit a pull request. Your contributions will help make this a valuable resource for the community!
-
-## 🤝 Let's Connect
-
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chetannada/)
-[![twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/chetannada)
-[![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/916005177838956555)
+✏️ Đóng Góp
+Đây là một kho lưu trữ mã nguồn mở và mọi đóng góp đều luôn được chào đón! Nếu bạn tìm thấy lỗi, vui lòng tạo một "issue" mới trong phần "Issues". Để đóng góp mã nguồn, hãy fork kho lưu trữ và gửi một "pull request". Sự đóng góp của bạn sẽ giúp dự án này trở thành tài nguyên quý giá cho cộng đồng!
